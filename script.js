@@ -2,13 +2,9 @@ function isPalindrome(str){
     /* Seu código aqui */
     let palavra = prompt('Informe a palavra ou frase: ')
     // palavra = 'victor'
-    let palindromo = newArray()
+    let palavra_invertida = palavra.split("").reverse().join("")
     
-    for(contador=0; contador < palavra.length; contador++){
-        palindromo.unshift() = palavra[contador]
-    }
-
-    if(palavra.toLowerCase()==palindromo.toLowerCase()){
+    if(palavra.toLowerCase()==palavra_invertida.toLowerCase()){
         alert(true)
     } else{
         alert(false)
